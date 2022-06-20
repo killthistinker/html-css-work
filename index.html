@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контрольная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div class="head">
+        <header class="header navbar-dark">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg text-white">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mx-5 mb-2 mb-lg-0 text-uppercase">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Employers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Team</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input onclick="showModal()" class="btn btn-outline-success text-uppercase"
+                                    type="button" value="Login">
+                            </form>
+                            <div id="this-modal" class="my-modal text-capitalize" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-success">Авторизация</h5>
+                                            <form action="">
+                                                <input onclick="closeModal()" type="button" class="btn-close"
+                                                    aria-label="Close"></input>
+                                            </form>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label text-success">Email
+                                                    address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">We'll never share your email with
+                                                    anyone else.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label text-success">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label text-success" for="exampleCheck1">Check
+                                                    me out</label>
+                                            </div>
+                                            <form action="">
+                                                <input type="submit" class="btn btn-success" value="Enter">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="main">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slider-pic.jpg" class="d-block w-100" alt="первый рисунок">
+                    <div class="slider-text text">
+                        <p class="slider-top text-uppercase">Where will <span class="black">great work</span> take you?
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-pic.jpg" class="d-block w-100" alt="второй рсунок">
+                    <div class="slider-text text">
+                        <p class="slider-top text-uppercase">Where will <span class="black">great work</span> take you?
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-pic.jpg" class="d-block w-100" alt="третий рсунок">
+                    <div class="slider-text text">
+                        <p class="slider-top text-uppercase">Where will <span class="black">great work</span> take you?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="services text-center py-5">
+                <h2 class="service-title text text-uppercase"><span class="black">We give</span> best Services</h2>
+                <p class="service-description description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis sit amet, consectetur adipisicing elit. Similique, quas! Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Cupiditate corporis architecto velit illo deserunt a officiis obcaecati esse
+                    odio
+                    amet.</p>
+            </div>
+            <div class="row boxes">
+                <div class="col-sm-12 col-md-6 col-lg-3 col-lg-3">
+                    <h3 class="box box-way description text-center text-uppercase">New Way of Vision</h3>
+                    <div class="box-description description text-center">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit.
+                        Perspiciatis tempora doloremque nulla assumenda dolorem maxime?</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h3 class="box box-fresh description text-center text-uppercase">New Way of Vision</h3>
+                    <div class="box-description description text-center">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit.
+                        Perspiciatis tempora doloremque nulla assumenda dolorem maxime?</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h3 class="box box-foundation description text-center text-uppercase">New Way of Vision</h3>
+                    <div class="box-description description text-center">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit.
+                        Perspiciatis tempora doloremque nulla assumenda dolorem maxime?</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h3 class="box box-support description text-center text-uppercase">New Way of Vision</h3>
+                    <div class="box-description description text-center">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit.
+                        Perspiciatis tempora doloremque nulla assumenda dolorem maxime?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img src="images/pic-big-1.png" class="img-fluid" alt="комьюнити">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h2 class="the-perfect title-container text-uppercase my-3">Find <span class="green">the
+                            perfect</span> match
+                        fast
+                    </h2>
+                    <p class="the-perfect-description description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Quod
+                        error, architecto voluptates iste corporis vitae. Nulla esse inventore explicabo corrupti.
+                        Quibusdam odit sapiente sequi, debitis deleniti maxime non pariatur modi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-8">
+                    <h2 class="the-perfect title-container text-uppercase">Great <span class="green">work starts</span>
+                        with great
+                        talent
+                    </h2>
+                    <ul class="great-work my-4">
+                        <li class="great-work-text d-flex align-items-center">
+                            <p class="description">Get amazing results working withe the best programmers</p>
+                        </li>
+                        <li class="great-work-text d-flex align-items-center">
+                            <p class="description">Designers, writers and other online pros</p>
+                        </li>
+                        <li class="great-work-text d-flex align-items-center">
+                            <p class="description">Hire freelancers with confidence, always cnowing</p>
+                        </li>
+                        <li class="great-work-text d-flex align-items-center">
+                            <p class="description">Their work experience and feedback from other clients</p>
+                        </li>
+                        <li class="great-work-text d-flex align-items-center">
+                            <p class="description">Designers, writers and other online pros</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="images/pic-big-2.png" class="img-fluid" alt="комьюнити">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section portfolio">
+        <div class="container">
+            <h2 class="job-board title text-center text-uppercase py-5">Recent Work Done on <span class="green">JOB
+                    BOARD</span></h2>
+            <div class="row gy-4 d-sm-flex align-items-sm-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="card" style="width: 17rem;">
+                        <a href="images/pic-1.jpg" class="image-link"><img src="images/pic-1.jpg" class="card-img-top"
+                                alt="..."></a>
+                        <div class="card-body text-center text-uppercase">
+                            <a href="#" class="card-btn btn-blue">Graphics</a>
+                            <h5 class="card-title pt-5">Round icons design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 17rem;">
+                        <a href="images/pic-2.jpg" class="image-link"><img src="images/pic-2.jpg" class="card-img-top"
+                                alt="..."></a>
+                        <div class="card-body text-center text-uppercase">
+                            <a href="#" class="card-btn btn-green">Graphics</a>
+                            <h5 class="card-title pt-5">Stationary Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 17rem;">
+                        <a href="images/pic-3.jpg" class="image-link"><img src="images/pic-3.jpg" class="card-img-top"
+                                alt="..."></a>
+                        <div class="card-body text-center text-uppercase">
+                            <a href="#" class="card-btn btn-purple">Graphics</a>
+                            <h5 class="card-title pt-5">Logo Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 17rem;">
+                        <a href="images/pic-4.jpg" class="image-link"><img src="images/pic-4.jpg" class="card-img-top"
+                                alt="..."></a>
+                        <div class="card-body text-center text-uppercase">
+                            <a href="#" class="card-btn btn-orange">Graphics</a>
+                            <h5 class="card-title pt-5">Branding</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 17rem;">
+                        <a href="images/pic-5.jpg" class="image-link"><img src="images/pic-5.jpg" class="card-img-top"
+                                alt="..."></a>
+                        <div class="card-body text-center text-uppercase">
+                            <a href="#" class="card-btn btn-green">Graphics</a>
+                            <h5 class="card-title pt-5">Visiting Card Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 17rem;">
+                        <a href="images/pic-6.jpg" class="image-link"><img src="images/pic-6.jpg" class="card-img-top"
+                                alt="..."></a>
+                        <div class="card-body text-center text-uppercase">
+                            <a href="#" class="card-btn btn-orange">Graphics</a>
+                            <h5 class="card-title pt-5">Brochure Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 17rem;">
+                        <a href="images/pic-7.jpg" class="image-link"><img src="images/pic-7.jpg" class="card-img-top"
+                                alt="..."></a>
+                        <div class="card-body text-center text-uppercase">
+                            <a href="#" class="card-btn btn-blue">Graphics</a>
+                            <h5 class="card-title pt-5">Branding</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 17rem;">
+                        <a href="images/pic-8.jpg" class="image-link"><img src="images/pic-8.jpg" class="card-img-top"
+                                alt="..."></a>
+                        <div class="card-body text-center text-uppercase">
+                            <a href="#" class="card-btn btn-purple">Graphics</a>
+                            <h5 class="card-title pt-5">Stationary Design</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-text text-uppercase">© 2015 JOB BOARD Landing Page By Mike Taylor</h3>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        function showModal() {
+            let modal = document.getElementById("this-modal");
+            let modalStyles = modal.style;
+            modalStyles.cssText = 'display:block';
+        };
+        function closeModal() {
+            let modal = document.getElementById("this-modal");
+            let modalStyles = modal.style;
+            modalStyles.cssText = 'display:none'
+        };
+    </script>
+</body>
+
+</html>
